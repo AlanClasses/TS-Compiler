@@ -1,7 +1,7 @@
 TS-Compiler
 =====================
 
-This is my Compielrs class initial project.
+This is the Compielrs class initial project.
 See http://www.labouseur.com/courses/compilers/ for details.
 
 Setup TypeScript/Gulp

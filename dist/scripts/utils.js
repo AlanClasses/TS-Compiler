@@ -5,10 +5,8 @@
    -------- */
 var TSC;
 (function (TSC) {
-    var Utils = (function () {
-        function Utils() {
-        }
-        Utils.trim = function (str) {
+    class Utils {
+        static trim(str) {
             return str.replace(/^\s+ | \s+$/g, "");
             /*
             Huh?  Take a breath.  Here we go:
@@ -18,8 +16,8 @@ var TSC;
             - "g" makes is global, so we get all the whitespace.
             - "" is nothing, which is what we replace the whitespace with.
             */
-        };
-        Utils.rot13 = function (str) {
+        }
+        static rot13(str) {
             var retVal = ""; // trouble explaining it in the future.  There's a lot to be said for obvious code.
             for (var i in str) {
                 var ch = str[i];
@@ -37,8 +35,8 @@ var TSC;
                 }
             }
             return retVal;
-        };
-        return Utils;
-    })();
+        }
+    }
     TSC.Utils = Utils;
 })(TSC || (TSC = {}));
+//# sourceMappingURL=utils.js.map

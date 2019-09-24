@@ -22,7 +22,7 @@ module TSC {
         	
         }
 
-    public static rot13(str)     // An easy-to understand implementation of the famous and common Rot13 obfuscator.
+    public static rot13(str)    // An easy-to understand implementation of the famous and common Rot13 obfuscator.
         {                       // You can do this in three lines with a complex regular experssion, but I'd have
             var retVal = "";    // trouble explaining it in the future.  There's a lot to be said for obvious code.
             for (var i in str)

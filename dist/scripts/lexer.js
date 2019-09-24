@@ -1,10 +1,8 @@
 /* lexer.ts  */
 var TSC;
 (function (TSC) {
-    var Lexer = (function () {
-        function Lexer() {
-        }
-        Lexer.lex = function () {
+    class Lexer {
+        static lex() {
             {
                 // Grab the "raw" source code.
                 var sourceCode = document.getElementById("taSourceCode").value;
@@ -13,8 +11,8 @@ var TSC;
                 // TODO: remove all spaces in the middle; remove line breaks too.
                 return sourceCode;
             }
-        };
-        return Lexer;
-    })();
+        }
+    }
     TSC.Lexer = Lexer;
 })(TSC || (TSC = {}));
+//# sourceMappingURL=lexer.js.map
